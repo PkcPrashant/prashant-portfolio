@@ -2,14 +2,9 @@
     width: 80%;
 }
 
-/* Header Component */
-header {
-    height: 10vh;
-}
-
 /* Hero Card - Hero Component - Start */
 .hero-card {
-    height: 90vh;
+    height: 100vh;
 }
 
 .hero-card a {
@@ -52,6 +47,16 @@ header {
     color: rgb(229 229 229);
     background-image: radial-gradient(88% 100% at top, hsla(0, 0%, 100%, .5), hsla(0, 0%, 100%, 0));
 }
+
+/* Skills Card - Skills Component - Start */
+.skills-card {
+    border: 2px solid rgb(82 82 82)
+}
+
+.skills-card .skill {
+    background-color: rgb(46 46 46);
+}
+/* Skills Card - Skills Component - End */
 
 /* Experience Card - Experience Component */
 .experience-card {

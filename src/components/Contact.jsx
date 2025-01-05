@@ -36,7 +36,7 @@ const Contact = () => {
         </div>
         <div className="d-flex flex-wrap px-4">
           {socials.map(({ href, displayText, icon: Icon }) => (
-            <div className="d-flex w-50 my-2">
+            <div key={href} className="d-flex w-50 my-2">
               {href ?
                 <a href={href} target="_blank" className="d-flex align-items-center justify-content-center gap-2 socials">
                   <Icon />
