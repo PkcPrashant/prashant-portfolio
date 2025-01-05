@@ -1,0 +1,15 @@
+body {
+    font-family: "Inter", sans-serif;
+    color: #161c2d;
+    background: #fff;
+    line-height: 1.6;
+    font-size: 17px;
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}

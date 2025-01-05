@@ -1,0 +1,81 @@
+.w-80 {
+    width: 80%;
+}
+
+/* Header Component */
+header {
+    height: 10vh;
+}
+
+/* Hero Card - Hero Component - Start */
+.hero-card {
+    height: 90vh;
+}
+
+.hero-card a {
+    color: white;
+}
+
+.hero-card a:hover {
+    scale: 110%;
+}
+
+.hero-card .typewriter-text {
+    color: rgb(163 163 163);
+}
+
+.hero-card .typewriter-cursor {
+    display: inline-block;
+    width: 1px;
+    background-color: black;
+    animation: blink 0.7s steps(2, start) infinite;
+}
+  
+@keyframes blink {
+    0%, 50% {
+        opacity: 1;
+    }
+    50.01%, 100% {
+        opacity: 0;
+    }
+}
+
+.hero-card .resume {
+    background-color: hsla(0, 0%, 100%, .2);
+    text-decoration: none;
+}
+/* Hero Card - Hero Component - End */
+
+/* About Card - About Component */
+.about-card {
+    background-color: rgb(55 48 163);
+    color: rgb(229 229 229);
+    background-image: radial-gradient(88% 100% at top, hsla(0, 0%, 100%, .5), hsla(0, 0%, 100%, 0));
+}
+
+/* Experience Card - Experience Component */
+.experience-card {
+    background-color: rgb(30 58 138);
+    color: rgb(229 229 229);
+    background-image: radial-gradient(88% 100% at top, hsla(0, 0%, 100%, .5), hsla(0, 0%, 100%, 0));
+}
+
+/* Contact Card - Contact Component - Start */
+.contact-card .background {
+    stroke: rgba(156, 163, 175, .3);
+    /* mask-image: radial-gradient(circle at center, #fff, transparent); */
+}
+
+.contact-card .socials {
+    color: rgb(163 163 163);
+}
+
+.contact-card a.socials {
+    text-decoration: none;
+}
+
+.contact-card a.socials:hover {
+    color: white;
+    text-decoration: underline;
+}
+/* Contact Card - Contact Component - End */
