@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { IoCloudDownloadOutline } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 
-const cvLink = "https://drive.google.com/file/d/1wpqXk_ySsnKlnoVbkahBNv8s0I38V7uo/view?usp=drive_link";
+const resumeLink = "https://drive.google.com/file/d/1ZX2mSSHOVsfOolu4xAqdSez5xDpv1_9V/view?usp=drive_link";
 
 const Hero = () => {
   return (
@@ -16,9 +16,9 @@ const Hero = () => {
         <a href="mailto:pc22230@gmail.com" target="_blank"><MdEmail /></a>
       </div>
 
-      <a href={cvLink} target="_blank" className="d-flex align-items-center justify-content-center gap-2 rounded py-2 px-3 mt-3 resume">
+      <a href={resumeLink} target="_blank" className="d-flex align-items-center justify-content-center gap-2 rounded py-2 px-3 mt-3 resume">
         <IoCloudDownloadOutline />
-        <span>View CV</span>
+        <span>View Resume</span>
       </a>
     </div>
   )
