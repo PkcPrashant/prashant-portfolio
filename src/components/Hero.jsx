@@ -13,7 +13,7 @@ const Hero = () => {
       <div className="d-flex justify-content-center align-items-center gap-3 fs-4">
         <a href="https://github.com/pkcprashant" target="_blank"><FaGithub /></a>
         <a href="https://www.linkedin.com/in/pkcprashant" target="_blank"><FaLinkedinIn /></a>
-        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=pc22230@gmail.com" target="_blank"><MdEmail /></a>
+        <a href="mailto:pc22230@gmail.com" target="_blank"><MdEmail /></a>
       </div>
 
       <a href={cvLink} target="_blank" className="d-flex align-items-center justify-content-center gap-2 rounded py-2 px-3 mt-3 resume">

@@ -10,7 +10,7 @@ const socials = [
     icon: LuGithub,
   },
   {
-    href: "https://mail.google.com/mail/?view=cm&fs=1&to=pc22230@gmail.com",
+    href: "mailto:pc22230@gmail.com",
     displayText: "pc22230@gmail.com",
     icon: MdOutlineEmail,
   },
