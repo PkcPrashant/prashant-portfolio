@@ -10,7 +10,7 @@ const socials = [
     icon: LuGithub,
   },
   {
-    href: "mailto:pc22230@gmail.com",
+    href: "https://mail.google.com/mail/?view=cm&fs=1&to=pc22230@gmail.com",
     displayText: "pc22230@gmail.com",
     icon: MdOutlineEmail,
   },
@@ -57,7 +57,7 @@ const Contact = () => {
             <path d="M.5 30V.5H30" fill="none" strokeDasharray="4 2" />
           </pattern>
         </defs>
-        <rect width="100%" height="100%" stroke-width="0" fill="url(#grid-pattern)"></rect>
+        <rect width="100%" height="100%" strokeWidth="0" fill="url(#grid-pattern)"></rect>
       </svg>
     </div>
   )

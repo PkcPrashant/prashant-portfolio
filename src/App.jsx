@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -8,15 +9,23 @@ import Contact from "./components/Contact";
 import "./App.css";
 
 const App = () => {
+
+  useEffect(() => {
+    const element = document.getElementById("home");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  }, []);
+
   return (
     <div>
       <Header />
       <main className="w-80 m-auto d-flex flex-column gap-3">
-        <section id="hero"><Hero /></section>
+        <section id="home"><Hero /></section>
         <section id="about"><About /></section>
         <section id="skills"><Skills /></section>
         <section id="experience"><Experience /></section>
-        <section id="projects"><Projects /></section>
+        {/* <section id="projects"><Projects /></section> */}
         <section id="contact"><Contact /></section>
       </main>
     </div>

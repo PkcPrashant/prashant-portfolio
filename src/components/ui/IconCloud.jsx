@@ -1,29 +1,6 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { Cloud, fetchSimpleIcons, renderSimpleIcon } from "react-icon-cloud";
 
-const slugs = [
-  "typescript",
-  "javascript",
-  "react",
-  "html5",
-  "css3",
-  "nodedotjs",
-  "express",
-  "nextdotjs",
-  "prisma",
-  "postgresql",
-  "vercel",
-  "docker",
-  "git",
-  "github",
-  // "visualstudiocode",
-  "c",
-  "python",
-  "tailwindcss",
-  "mongodb",
-  "mysql",
-];
-
 const cloudProps = {
   options: {
     reverse: true,
@@ -61,7 +38,7 @@ const renderCustomIcon = (icon) => {
   });
 };
 
-const IconCloud = () => {
+const IconCloud = ({ slugs }) => {
   const [data, setData] = useState(null);
 
   useEffect(() => {

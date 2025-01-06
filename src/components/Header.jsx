@@ -6,6 +6,7 @@ const Header = () => {
       <nav className="navbar navbar-expand-lg navbar-dark">
         <div className="container-fluid">
           <div className="navbar-collapse">
+            <a className="nav-link" href="#home"><img src="/icon.ico" width="40" height="40" /></a>
             <ul className="navbar-nav ms-md-auto gap-2">
               {
                 sections.map((section) => (
