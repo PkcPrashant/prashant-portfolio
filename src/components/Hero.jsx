@@ -8,6 +8,11 @@ const resumeLink = "https://drive.google.com/file/d/1ZX2mSSHOVsfOolu4xAqdSez5xDp
 const Hero = () => {
   return (
     <div className="hero-card d-flex flex-column justify-content-center align-items-center">
+      <h4 className="text-white">
+        Note: This portfolio site is work in progress and not yet completed.
+        <br />
+        Please view in desktop for best experience as of now.
+      </h4>
       <h1 className="text-white fw-bold">Prashant Choudhary</h1>
       <div className="d-flex gap-1 fs-5 typewriter-text"><span>I'm a</span><Typewriter /></div>
       <div className="d-flex justify-content-center align-items-center gap-3 fs-4">
