@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -9,14 +8,6 @@ import Contact from "./components/Contact";
 import "./App.css";
 
 const App = () => {
-
-  useEffect(() => {
-    const element = document.getElementById("home");
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  }, []);
-
   return (
     <div>
       <Header />

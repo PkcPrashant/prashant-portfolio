@@ -1,23 +1,25 @@
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 import sections from '../utility/sections';
 
 const Header = () => {
   return (
-    <header className="sticky-top z-index-50 bg-black bg-opacity-75">
-      <nav className="navbar navbar-expand-lg navbar-dark">
-        <div className="container-fluid">
-          <div className="navbar-collapse">
-            <a className="nav-link" href="#home"><img src="/icon.ico" width="40" height="40" /></a>
-            <ul className="navbar-nav ms-md-auto gap-2">
-              {
-                sections.map((section) => (
-                  <li key={section?.label}><a className="nav-link" href={`#${section?.href}`}>{section?.label}</a></li>
-                ))
-              }
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
+    <Navbar collapseOnSelect expand="lg" fixed="top" data-bs-theme="dark" bg="black" >
+      <Container fluid>
+        <Navbar.Brand href="#home"><img src="/icon.ico" width="40" height="40" /></Navbar.Brand>
+        <Navbar.Toggle />
+        <Navbar.Collapse>
+          <Nav className="ms-auto">
+            {
+              sections.map((section) => (
+                <Nav.Link href={`#${section?.href}`} key={section?.label}>{section?.label}</Nav.Link>
+              ))
+            }
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 }
 
