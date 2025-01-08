@@ -111,7 +111,7 @@ const skillsList = [
 const Skills = () => {
   return (
     <div className="skills-card rounded-3 p-4 d-flex gap-3">
-      <div className="d-flex flex-column gap-3 w-75 p-4">
+      <div className="d-flex flex-column gap-3 skill-container">
         <h2 className="text-white mb-3">Skills</h2>
         <div className="d-flex gap-2 flex-wrap">
           {skillsList.map(({ name, color }, id) => (
@@ -125,7 +125,7 @@ const Skills = () => {
           ))}
         </div>
       </div>
-      <div className="w-25">
+      <div className="skill-cloud-container">
         <IconCloud slugs={skillsList.filter((skill) => skill.slug).map((skill) => skill.slug)} />
       </div>
     </div>

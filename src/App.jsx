@@ -11,7 +11,7 @@ const App = () => {
   return (
     <div>
       <Header />
-      <main className="w-80 m-auto d-flex flex-column gap-3">
+      <main className="w-100 mx-auto px-2 d-flex flex-column gap-3" style={{maxWidth: '1100px'}}>
         <section id="home"><Hero /></section>
         <section id="about"><About /></section>
         <section id="skills"><Skills /></section>

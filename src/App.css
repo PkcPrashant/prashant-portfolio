@@ -50,11 +50,33 @@
 
 /* Skills Card - Skills Component - Start */
 .skills-card {
-    border: 2px solid rgb(82 82 82)
+    border: 2px solid rgb(82 82 82);
+    flex-direction: column;
 }
 
 .skills-card .skill {
     background-color: rgb(46 46 46);
+}
+
+.skills-card .skill-cloud-container {
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 700px) {
+    .skills-card {
+        flex-direction: row;
+    }
+
+    .skills-card .skill-container {
+        width: 75%;
+        /* padding: 1.5rem; */
+    }
+
+    .skills-card .skill-cloud-container {
+        width: 25%;
+        align-items: center;
+    }
 }
 /* Skills Card - Skills Component - End */
 
