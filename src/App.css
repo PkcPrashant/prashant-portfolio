@@ -2,6 +2,10 @@
     width: 80%;
 }
 
+.header-card {
+    height: 66px;
+}
+
 /* Hero Card - Hero Component - Start */
 .hero-card {
     height: 100vh;
