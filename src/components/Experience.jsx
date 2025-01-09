@@ -41,7 +41,7 @@ const Experience = () => {
       {
         experienceList.map(({ company, position, duration, description, client }) => (
           <article className="d-flex flex-column gap-2" key={company}>
-            <div className="d-flex justify-content-between">
+            <div className="d-flex experience-header-container">
               <div>
                 <div className="d-flex align-items-end gap-2">
                   <h3 className="text-white">{company}</h3>

@@ -80,20 +80,43 @@
 }
 /* Skills Card - Skills Component - End */
 
-/* Experience Card - Experience Component */
+/* Experience Card - Experience Component - Start */
 .experience-card {
     background-color: rgb(30 58 138);
     color: rgb(229 229 229);
     background-image: radial-gradient(88% 100% at top, hsla(0, 0%, 100%, .5), hsla(0, 0%, 100%, 0));
 }
 
-/* Contact Card - Contact Component - Start */
-.contact-card .background {
-    stroke: rgba(156, 163, 175, .3);
-    /* mask-image: radial-gradient(circle at center, #fff, transparent); */
+.experience-card .experience-header-container {
+    flex-direction: column;
 }
 
-.contact-card .socials {
+@media (min-width: 700px) {
+    .experience-card .experience-header-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+/* Experience Card - Experience Component - End */
+
+/* Contact Card - Contact Component - Start */
+.contact-card {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .contact-card .background-svg {
+    pointer-events: none;
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    fill: rgba(156, 163, 175, 0.3);
+    stroke: rgba(156, 163, 175, 0.3);
+    mask-image: radial-gradient(300px circle at center, white, transparent);
+  }  
+
+  .contact-card .socials {
     color: rgb(163 163 163);
 }
 
@@ -104,5 +127,30 @@
 .contact-card a.socials:hover {
     color: white;
     text-decoration: underline;
+}
+
+.contact-card .contact-container {
+    flex-direction: column;
+    padding: 0;
+}
+
+.contact-card .contact-detail {
+    width: 100%;
+}
+
+@media (min-width: 700px) {
+    .contact-card .contact-container {
+        flex-wrap: wrap;
+        padding: 0 1.5rem;
+        flex-direction: row;
+    }
+
+    .contact-card .contact-detail {
+        width: 50%;
+    }
+
+    .contact-card .background-svg {
+        mask-image: none;
+    }  
 }
 /* Contact Card - Contact Component - End */
