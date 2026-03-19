@@ -86,13 +86,11 @@ const Experience = () => {
               </div>
               <p>{location} | {duration}</p>
             </div>
-            <p>
-              <ul>
+            <ul>
               {description.map((desc, index) => (
                 <li key={index}>{desc}</li>
               ))}
-              </ul>
-            </p>
+            </ul>
           </article>
         ))
       }

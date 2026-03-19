@@ -3,7 +3,8 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { IoCloudDownloadOutline } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 
-const resumeLink = "https://drive.google.com/file/d/1ZX2mSSHOVsfOolu4xAqdSez5xDpv1_9V/view?usp=drive_link";
+// const resumeLink = "https://drive.google.com/file/d/1ZX2mSSHOVsfOolu4xAqdSez5xDpv1_9V/view?usp=drive_link";
+const resumeLink = "https://drive.google.com/file/d/1p2rdkU80VDV0am9_QHVC5AJF3hD9CrSJ/view";
 
 const Hero = () => {
   return (

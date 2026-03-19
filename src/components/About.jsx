@@ -3,11 +3,7 @@ const About = () => {
     <div className="about-card rounded-3 p-4 d-flex flex-column gap-3">
       <h2 className="text-white">About Me</h2>
       <p>
-        I am a result-driven Frontend Developer with 5 years of experience building responsive and high-performance web
-        applications using Angular, React, and TypeScript. Adept at designing user-centric interfaces and integrating RESTful
-        APIs to deliver seamless user experiences. Proficient in collaborating within Agile teams to ensure timely delivery
-        and code excellence. Experienced in conducting technical interviews and recognized for contributions to code
-        quality and production issue resolution.
+        Full-Stack Developer with 6+ years of experience building scalable, production-ready web applications. Skilled in React, Node.js, Express, and MongoDB, delivering user-centric solutions for enterprise and government clients like Dubai Health Authority, Flydubai, Nokia, etc. Recognized for resolving critical production issues and leading end-to-end development of high-impact projects.      
       </p>
     </div>
   );
